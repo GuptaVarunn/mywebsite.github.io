@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-68WCEZBEKJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-68WCEZBEKJ");
+    </script>
+  </head>
+  <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
     </header>
 
     <section>
-        <p>Click the images below to navigate:</p>
-        <div class="image-container">
-            <a href="about.html"><img src="https://via.placeholder.com/150" alt="About"></a>
-            <a href="contact.html"><img src="https://via.placeholder.com/150" alt="Contact"></a>
-        </div>
+      <p>Click the images below to navigate:</p>
+      <div class="image-container">
+        <a href="about.html"
+          ><img src="https://via.placeholder.com/150" alt="About"
+        /></a>
+        <a href="contact.html"
+          ><img src="https://via.placeholder.com/150" alt="Contact"
+        /></a>
+      </div>
     </section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
