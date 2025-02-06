@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
 header {
@@ -18,12 +18,46 @@ nav a {
     margin: 0 15px;
 }
 
-.image-container {
-    margin-top: 20px;
+.hero img, .about-content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
 }
 
-img {
-    width: 150px;
+.image-container img {
+    width: 200px;
     margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
